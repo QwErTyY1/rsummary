@@ -1,0 +1,611 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    /*	fonts: fakt-web,Helvetica Neue,Hevetica,sans-serif;*/
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid rgb(25, 25, 25);
+}
+
+
+.main aside {
+    border-top: 20px solid rgb(25, 25, 25);
+}
+
+.header-container,
+
+.main aside {
+    background: rgb(25, 25, 25);
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 8px;
+    padding: 15px 100px;
+    /* text-align: center; */
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    background: #736464;
+    float: left;
+    width: 100%;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+
+
+
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.footer-content{
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+}
+
+div.footer-down{
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #222; /* Цвет фона */
+    color: #ffffff;
+    text-align: center;
+    width: 100%; /* Ширина слоя */
+}
+
+
+
+/* uses fonts awesome for social icons */
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+.page-header{
+    text-align: center;
+}
+
+/*social buttons*/
+.btn-social{
+    color: white;
+    opacity:0.9;
+}
+.btn-social:hover {
+    color: white;
+    opacity:1;
+}
+.btn-facebook {
+    background-color: #3b5998;
+    opacity:0.9;
+}
+.btn-twitter {
+    background-color: #00aced;
+    opacity:0.9;
+}
+.btn-linkedin {
+    background-color:#0e76a8;
+    opacity:0.9;
+}
+.btn-github{
+    background-color:#000000;
+    opacity:0.9;
+}
+.btn-google {
+    background-color: #c32f10;
+    opacity: 0.9;
+}
+.btn-stackoverflow{
+    background-color: #D38B28;
+    opacity: 0.9;
+}
+
+/* resume stuff */
+
+.bs-callout {
+    /*
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+    */
+    border-color: #eee;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 1px 1px 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.bs-callout:last-child {
+    margin-bottom: 0px;
+}
+.bs-callout h4 {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.bs-callout-danger h4{
+    color: #d9534f;
+}
+
+.resume .list-group-item:first-child, .resume .list-group-item:last-child{
+    border-radius:0;
+}
+
+/*makes an anchor inactive(not clickable)*/
+.inactive-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.resume-heading .social-btns{
+    margin-top:15px;
+}
+.resume-heading .social-btns i.fa{
+    margin-left:-5px;
+}
+
+
+
+@media (max-width: 992px) {
+    .resume-heading .social-btn-holder{
+        padding:5px;
+    }
+}
+
+
+/* skill meter in resume. copy pasted from http://bootsnipp.com/snippets/featured/progress-bar-meter */
+
+.progress-bar {
+    text-align: left;
+    white-space: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.progress-bar > .progress-type {
+    padding-left: 10px;
+}
+
+.progress-meter {
+    min-height: 15px;
+    border-bottom: 2px solid rgb(160, 160, 160);
+    margin-bottom: 15px;
+}
+
+.progress-meter > .meter {
+    position: relative;
+    float: left;
+    min-height: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(160, 160, 160);
+}
+
+.progress-meter > .meter-left {
+    border-left-width: 2px;
+}
+
+.progress-meter > .meter-right {
+    float: right;
+    border-right-width: 2px;
+}
+
+.progress-meter > .meter-right:last-child {
+    border-left-width: 2px;
+}
+
+.progress-meter > .meter > .meter-text {
+    position: absolute;
+    display: inline-block;
+    bottom: -20px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.85em;
+    color: rgb(160, 160, 160);
+    text-align: left;
+}
+
+.progress-meter > .meter.meter-right > .meter-text {
+    text-align: right;
+}
+
+
+
+
+
+
+
+/*...*/
+div.main-container{
+    background-color: rgba(4, 0, 0, 0.43);
+}
+
+
+nav ul form{
+    width: 65%;
+    margin: 16px -1.3%;
+    padding: 2px 2%;
+    margin-bottom: 8px;
+    width: 102%;
+}
+
+.pn-buttons button:first-child {
+    background: #eb5424;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+
+
+
+.pn-buttons button {
+    width: 49%;
+    height: 46px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    letter-spacing: .5px;
+}
+
+
+.pn-popup-container {
+
+    border-radius: 3px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+    /* ====================
+        INTERMEDIATE: Menu
+       ==================== */
+
+    nav a {
+        float: left;
+        width: 28%;
+        margin: 3px 1.7%;
+        padding: 29px 6%;
+        margin-bottom: 0;
+        height: 100px;
+    }
+
+    nav li:first-child a{
+        margin-left: 10px;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+    nav ul li form{
+        margin-left: 10px;
+    }
+
+    /* ========================
+        INTERMEDIATE: IE Fixes
+       ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+
+    nav ul form{
+        float: left;
+        /* width: 65%; */
+        margin: 0px -3.3%;
+        padding: 3px 0%;
+        margin-bottom: 8px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* ====================
+        WIDE: CSS3 Effects
+       ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
+    }
+
+    /* ============
+        WIDE: Menu
+       ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 42%;
+    }
+
+
+    nav ul li form{
+        float: left;
+        margin-left: 10;
+    }
+
+    /* ============
+        WIDE: Main
+       ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+    /* ===============
+        Maximal Width
+       =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
